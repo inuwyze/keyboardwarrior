@@ -1,0 +1,67 @@
+@import "../mixins.scss";
+h1{
+    @include sel;
+    letter-spacing: 2px;
+}
+.loginPage{
+    display: flex;
+    height: 100%;
+    font-family: arcade;
+
+    .loginImg{
+        border-right: 1px solid black;
+        background-color: black;
+    }
+}
+.container{
+    padding: 50px;
+}
+.form{
+    font-family: arcadeclassic;
+    color: white;
+    
+    background: rgb(1,2,3);
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    div{
+        margin-top: 10px;
+    }
+    // margin: 40px;
+    // justify-content: center;
+    // align-items: center;
+    
+    // div{
+    //     margin-top: 25px;
+    //     border-radius: 6px;
+    // }
+}
+input{
+    // border-radius: 6px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.116);
+    border: 0;
+    border-bottom: 1px solid rgb(37, 165, 32);
+    &:focus{
+        border-bottom: 2px solid greenyellow;
+    }
+}
+.loginImg{
+    flex: 3 ;
+}
+
+.button{
+    @include sel;
+    margin-top: 30px !important;
+    border-radius: 3px;
+    background: rgb(37, 165, 32);
+    padding: 10px;
+    letter-spacing: 2px;
+    &:active{
+        transform: scale(0.9);
+    }
+
+}
